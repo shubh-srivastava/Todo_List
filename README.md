@@ -1,16 +1,99 @@
-# React + Vite
+# Todo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern **Todo List application** built with **React** and **Vite**.  
+The app allows users to **add, update, and delete todo tasks** with a smooth and responsive interface.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##  Features
 
-## React Compiler
+-  Add new todo tasks  
+-  Update existing todo tasks  
+-  Delete todo tasks  
+-  Snowfall animation in the background  
+-  Fast performance using Vite  
+-  Fully responsive UI  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React** – Frontend library  
+- **Vite** – Development and build tool  
+- **JavaScript**  
+- **CSS** – Styling and animations  
+
+
+
+##  Project Structure
+
+```
+├── node_modules
+├── public
+├── src
+│ ├── assets
+│ ├── components
+│ │ ├── index.js
+│ │ ├── TodoForm.jsx
+│ │ └── TodoItem.jsx
+│ ├── context
+│ │ ├── index.js
+│ │ └── TodoContext.js
+│ ├── App.css
+│ ├── App.jsx
+│ ├── index.css
+│ └── main.jsx
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package.json
+└── README.md
+````
+
+##  Installation
+
+Follow these steps to set up the project locally:
+
+```bash
+git clone https://github.com/shubh-srivastava/Todo_List
+cd Todo_List
+npm install
+````
+
+##  Run the Project (Development Mode)
+
+To start the development server, run:
+
+```bash
+npm run dev
+```
+
+The application will be available at:
+
+```
+http://localhost:5173
+```
+
+The page will automatically reload when you make changes to the source code.
+
+---
+
+##  How the App Works
+
+* Todo tasks are managed using **React state (`useState`)**
+* Users can perform **CRUD operations** (Create, Read, Update, Delete)
+* Snowfall background animation runs continuously using **npm snowfall**
+* Component-based architecture ensures clean and reusable code
+
+
+##  Future Enhancements
+
+*  Mark todos as completed
+*  Save todos using Local Storage
+*  Dark mode support
+*  Task deadlines and reminders
+
+
+
+##  Contributing
+
+Contributions are welcome!
+Fork the repository, make your changes, and submit a pull request.
